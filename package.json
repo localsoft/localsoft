@@ -16,7 +16,7 @@
     "less": "^4.0.0",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "next": "10.x",
+    "next": "11.x",
     "null-loader": "^4.x",
     "prop-types": "^15.7.2",
     "react": "17.x",
