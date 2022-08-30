@@ -1,23 +1,34 @@
-localsoft
-=========
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Software for small organizations doing organizing work.
+## Getting Started
 
-This is not open source, though the source is open to inspect.
+First, run the development server:
 
-&copy; Tristan McNab 2018+
-
-Helpful Commands
-----------------
-- `npx prisma db push --preview-feature` to sync your schema with your local database
-- `npx prisma format` to reformat your schema
-- `npx prisma generate` to regenerate the prisma client when you make a change to the schema
-- `npx prisma studio` to muck with model data in development
-
-Setup
------
-- Assumes you're using postgresapp
-- Create `/.env` with the following content (where `USERNAME` is your local account's username, obviously):
+```bash
+npm run dev
+# or
+yarn dev
 ```
-DATABASE_URL=postgresql://USERNAME@localhost/USERNAME
-```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
