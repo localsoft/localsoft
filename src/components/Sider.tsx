@@ -1,4 +1,4 @@
-import { UserOutlined } from '@ant-design/icons'
+import { FileOutlined, UserOutlined } from '@ant-design/icons'
 import { Layout, Menu } from 'antd'
 import { MenuItemType } from 'antd/es/menu/hooks/useItems'
 import { useState } from 'react'
@@ -9,7 +9,8 @@ export default function PageSider () {
 	const router = useRouter()
 
 	const items: MenuItemType[] = [
-		{ icon: <UserOutlined />, key: '/people', label: 'People' }
+		{ icon: <UserOutlined />, key: '/people', label: 'People' },
+		{ icon: <FileOutlined />, key: '/files', label: 'Files' },
 	]
 
 	const onClick = (item: MenuItemType) =>

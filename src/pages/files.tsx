@@ -8,9 +8,13 @@ export interface Props {
 }
 
 export default function People ({ authenticated }: Props) {
+	const onClick = (type: string) => {
+
+	}
+
 	return (
-		<Page authenticated={authenticated} title='People'>
-			<PageHeader buttons={[PageHeaderButtons.CREATE, PageHeaderButtons.IMPORT, PageHeaderButtons.HELP]} title='People' />
+		<Page authenticated={authenticated} title='Files'>
+			<PageHeader buttons={[PageHeaderButtons.UPLOAD, PageHeaderButtons.HELP]} onClick={onClick} title='Files' />
 			<Table />
 		</Page>
 	)
