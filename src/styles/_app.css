@@ -1,8 +1,0 @@
-body {
-	margin: 0;
-	padding: 0;
-}
-
-body, #__next {
-	min-height: 100vh;
-}
