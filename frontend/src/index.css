@@ -5,3 +5,7 @@ html, body, body > #root {
 body {
 	margin: 0;
 }
+
+body > .ant-layout {
+	min-height: 100vh;
+}
