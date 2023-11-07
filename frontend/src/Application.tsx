@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from 'antd'
-import CalendarPage from './calendar/CalendarPage'
+import CalendarPage from './calendar/Page'
 import DashboardPage from './dashboard/DashboardPage'
 import Navigation from './Navigation'
 

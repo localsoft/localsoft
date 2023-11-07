@@ -9,3 +9,8 @@ body {
 body > .ant-layout {
 	min-height: 100vh;
 }
+
+h1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
