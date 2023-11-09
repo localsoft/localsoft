@@ -1,6 +1,7 @@
 import { 
-	CalendarOutlined, 
-	HomeOutlined 
+	CalendarOutlined,
+	HomeOutlined, 
+	SettingOutlined
 } from "@ant-design/icons"
 import { Menu } from "antd"
 import { MenuItemType } from "antd/es/menu/hooks/useItems"
@@ -11,11 +12,16 @@ const items: MenuItemType[] = [{
 	key: '/',
 	label: 'Dashboard',
 	title: 'Dashboard',
-},{ 
+}, { 
 	icon: <CalendarOutlined />, 
 	key: '/calendar',
 	label: 'Calendar',
 	title: 'Calendar',
+}, {
+	icon: <SettingOutlined />,
+	key: '/settings',
+	label: 'Settings',
+	title: 'Settings',
 }] 
 
 export default function Navigation () {

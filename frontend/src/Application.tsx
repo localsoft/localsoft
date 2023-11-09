@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from 'antd'
 import CalendarPage from './calendar/Page'
-import DashboardPage from './dashboard/DashboardPage'
+import DashboardPage from './dashboard/Page'
 import Navigation from './Navigation'
 
 export default function Application() {
