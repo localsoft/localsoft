@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Layout } from 'antd'
-import CalendarPage from './calendar/Page'
-import DashboardPage from './dashboard/Page'
+import CalendarPage from './features/calendar/CalendarPage'
+import DashboardPage from './features/dashboard/Page'
 import Navigation from './Navigation'
+import SettingsPage from './features/settings/SettingsPage'
 
 export default function Application() {
 	return (
@@ -16,6 +17,7 @@ export default function Application() {
 						<Routes>
 							<Route element={<DashboardPage />} path='/' />
 							<Route element={<CalendarPage />} path='/calendar' />
+							<Route element={<SettingsPage />} path='/settings' />
 						</Routes>
 					</Layout.Content>
 				</Layout>

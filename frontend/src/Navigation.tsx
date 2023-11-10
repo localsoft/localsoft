@@ -4,6 +4,7 @@ import {
 	SettingOutlined
 } from "@ant-design/icons"
 import { Menu } from "antd"
+import { SelectInfo } from "antd/es/calendar/generateCalendar"
 import { MenuItemType } from "antd/es/menu/hooks/useItems"
 import { useNavigate } from "react-router-dom"
 
@@ -27,8 +28,13 @@ const items: MenuItemType[] = [{
 export default function Navigation () {
 	const navigate = useNavigate()
 
-	const onSelect = (event: any) =>
-		navigate(event.key)
+	const onSelect = ({ key }: any) => {
+		const item = items.find(i => i.key === key)
+		if (item) {
+			document.title = `${item.title} • LocalSoft`
+			navigate(key)
+		}
+	}
 
 	return <Menu items={items} onSelect={onSelect} theme='light' />
 }

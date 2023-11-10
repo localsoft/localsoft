@@ -12,11 +12,11 @@ export default function Header () {
 				</Form.Item>
 			</Form>
 			<Flex gap='small' justify='space-between'>
-				<Tooltip title='Help'>
-					<Button icon={<QuestionOutlined />} shape='circle' size='large' />
-				</Tooltip>
 				<Tooltip title='Create New Event'>
 					<Button icon={<PlusOutlined />} shape='circle' size='large' />
+				</Tooltip>
+				<Tooltip title='Help'>
+					<Button icon={<QuestionOutlined />} shape='circle' size='large' />
 				</Tooltip>
 			</Flex>
 		</Flex>
