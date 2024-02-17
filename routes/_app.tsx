@@ -11,6 +11,7 @@ export default function App({ Component }: PageProps) {
 				<link rel="stylesheet" href="/ls-button.css" />
 				<link rel="stylesheet" href="/ls-form.css" />
 				<link rel="stylesheet" href="/ls-table.css" />
+				<link rel="stylesheet" href="/ls-select.css" />
 			</head>
 			<body>
 				<Component />

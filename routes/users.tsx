@@ -1,8 +1,7 @@
+import { Button } from "../components/Button.tsx"
 import { createUsers } from "../types/User.ts"
 import Layout from '../components/Layout.tsx'
 import Table from '../islands/Table.tsx'
-import { Button } from "../components/Button.tsx";
-import { Form } from "../components/Form.tsx";
 
 const columns = [{
 	property: 'username',
@@ -13,14 +12,7 @@ const columns = [{
 }, {
 	property: 'role',
 	title: 'Role',
-}, {
-	property: 'status',
-	title: 'Status',
-}, {
-	title: 'Actions',
 }]
-
-
 
 export default function People () {
 	const data = createUsers(10)

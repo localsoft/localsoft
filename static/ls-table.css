@@ -11,19 +11,3 @@
 	padding: 1rem;
 	width: 100%;
 }
-
-.ls-table-footer-perpage select {
-	border: 0;
-	cursor: pointer;
-}
-
-.ls-table-footer-navigation {
-	display: flex;
-	gap: 1rem;
-}
-
-.ls-table-footer-navigation button {
-	background-color: aqua;
-	border: none;
-	cursor: pointer;
-}

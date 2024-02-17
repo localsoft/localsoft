@@ -1,3 +1,6 @@
+import { Button } from '../components/Button.tsx'
+import { Select, SelectItem } from "../components/Select.tsx";
+
 export interface Column {
 	property: string
 	title: string
@@ -32,28 +35,6 @@ function Body (props: TableBodyProps) {
 	)
 }
 
-function Footer() {
-	return (
-	<tfoot>
-	  <span>1 - 10 of 59</span>
-	  <span className='ls-table-footer-perpage'>
-		<span>Rows / Page</span>
-		<select>
-		  <option>10</option>
-		  <option>25</option>
-		  <option>50</option>
-		</select>
-	  </span>
-	  <span className='ls-table-footer-navigation'>
-		<button>&lsaquo;</button>
-		<button>&laquo;</button>
-		<button>&raquo;</button>
-		<button>&rsaquo;</button>
-	  </span>
-	</tfoot>
-	)
-}
-
 function Header (props: TableHeaderProps) {
 	return (
 		<thead>
@@ -72,8 +53,37 @@ export default function Table(props: TableProps) {
 			<table>
 				<Header {...props} />
 				<Body {...props} />
-				<Footer />
+				<Table.Footer />
 			</table>
 		</div>
 	)
+}
+
+
+Table.Footer = () => {
+	const pageSizeItems: SelectItem[] = [
+		{ label: '10', value: 10 },
+		{ label: '25', value: 25 },
+		{ label: '50', value: 50 },
+	]
+
+	const onSelect = (item: SelectItem) => {
+		console.log('Table.Footer::onSelect', item)
+	}
+
+	return (
+		<tfoot>
+		  <span>1 - 10 of 59</span>
+		  <span className='ls-table-footer-perpage'>
+			<span>Rows / Page</span>
+			<Select items={pageSizeItems} onSelect={onSelect} />
+		  </span>
+		  <span className='ls-table-footer-navigation'>
+			<Button icon='«' />
+			<Button icon='‹' />
+			<Button icon='›' />
+			<Button icon='»' />
+		  </span>
+		</tfoot>
+		)
 }
