@@ -1,0 +1,7 @@
+.ls-button {
+	border-radius: 0.25rem;
+	border: 1px solid black;
+	color: black;
+	cursor: 'pointer';
+	padding: 0.5rem;
+}

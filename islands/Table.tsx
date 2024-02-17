@@ -1,16 +1,18 @@
 export interface Column {
 	property: string
-	title: string;
+	title: string
 }
 
 export interface TableProps {
 	columns: Column[]
 	data: object[]
+	onClick?: (item: object) => void
 }
 
 export interface TableBodyProps {
 	columns: Column[]
 	data: object[]
+	onClick?: (item: object) => void
 }
 
 export interface TableHeaderProps {
@@ -21,10 +23,11 @@ function Body (props: TableBodyProps) {
 	return (
 		<tbody>
 		{props.data.map(item => 
-			<tr>
+			<tr onClick={props.onClick} style={{ cursor: 'pointer' }}>
 			{props.columns.map(column => 
-				<td>{item[column.property]}</td>)}
-			</tr>)}
+				<td>{item[column.property] as unknown}</td>)}
+			</tr>
+		)}
 		</tbody>
 	)
 }
