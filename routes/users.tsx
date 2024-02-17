@@ -2,6 +2,7 @@ import { createUsers } from "../types/User.ts"
 import Layout from '../components/Layout.tsx'
 import Table from '../islands/Table.tsx'
 import { Button } from "../components/Button.tsx";
+import { Form } from "../components/Form.tsx";
 
 const columns = [{
 	property: 'username',
@@ -29,11 +30,9 @@ export default function People () {
 	}
 
 	return (
-		<Layout navigation title='People'>
+		<Layout navigation title='Users'>
 			<header className='display-flex padding-md'>
-				<form>
-					<input type='search' />
-				</form>
+				<h1>Users</h1>
 				<div className='display-flex'>
 					<Button href='/help/users' label='Help' />
 					&nbsp;

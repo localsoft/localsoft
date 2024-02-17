@@ -1,0 +1,10 @@
+.ls-form {}
+
+.ls-form-item {
+}
+
+.ls-form-item input {
+	border: 1px solid black;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+}

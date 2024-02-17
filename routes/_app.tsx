@@ -9,6 +9,7 @@ export default function App({ Component }: PageProps) {
 				<title>localsoft</title>
 				<link rel="stylesheet" href="/styles.css" />
 				<link rel="stylesheet" href="/ls-button.css" />
+				<link rel="stylesheet" href="/ls-form.css" />
 				<link rel="stylesheet" href="/ls-table.css" />
 			</head>
 			<body>
