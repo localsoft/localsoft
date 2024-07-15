@@ -1,6 +1,7 @@
+import { Header } from '@/components/Header'
 import InternalLayout from '@/components/InternalLayout'
 
 export default () =>
 	<InternalLayout>
-		<p>Hello world</p>
+		<Header title='Settings' />
 	</InternalLayout>
